@@ -6,7 +6,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="50dp"
+    android:layout_height="@dimen/offset"
     app:left_swipe_enabled="true"
     app:right_swipe_enabled="true">
 
@@ -17,7 +17,7 @@
         android:orientation="horizontal">
 
         <FrameLayout
-            android:layout_width="50dp"
+            android:layout_width="@dimen/offset"
             android:layout_height="match_parent">
 
             <ImageView
@@ -33,6 +33,7 @@
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             android:gravity="center"
+            android:textSize="16sp"
             tools:text="Test" />
 
     </LinearLayout>
@@ -42,19 +43,18 @@
         android:layout_width="wrap_content"
         android:layout_height="match_parent"
         app:gravity="left"
-        app:bring_to_clamp="150dp"
-        app:sticky="50dp"
+        app:bring_to_clamp="180dp"
+        app:sticky="@dimen/offset"
         android:orientation="horizontal">
 
         <FrameLayout
-            android:layout_width="50dp"
+            android:layout_width="36dp"
             android:layout_height="match_parent"
-            android:background="@android:color/holo_purple">
-        </FrameLayout>
+            android:background="@android:color/holo_purple"/>
 
         <FrameLayout
             android:id="@+id/purple"
-            android:layout_width="50dp"
+            android:layout_width="@dimen/offset"
             android:layout_height="match_parent"
             android:background="@android:color/holo_purple">
 
@@ -68,7 +68,7 @@
 
         <FrameLayout
             android:id="@+id/orange"
-            android:layout_width="50dp"
+            android:layout_width="@dimen/offset"
             android:layout_height="match_parent"
             android:background="@android:color/holo_orange_dark">
 
